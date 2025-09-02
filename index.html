@@ -85,6 +85,8 @@
 
       if(ambiente.includes('dev') || ambiente.includes('qa')){
         ambiente = ambiente + '.';
+      }else{
+        ambiente = 'www.'
       }
 
       const urlFinal = `https://${ambiente}hbatools.com.br/Home/ChangeLanguageInscricao/${idPagina}?lang=${idioma}`;
@@ -131,3 +133,4 @@
 </body>
 
 </html>
+
